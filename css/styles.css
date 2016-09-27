@@ -37,9 +37,9 @@ nav > ul > li > a:hover {
 }
 
 section.main {
-  width: 350px;
+  position: relative;
 	float: left;
-	margin: 10px;
+  margin-top: 200px;
 }
 
 footer {
