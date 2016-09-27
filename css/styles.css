@@ -1,3 +1,57 @@
 body {
   font-family: 'Slabo 27px', serif;
 }
+
+header {
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+nav {
+  background-color: azure;
+  width: 15%;
+  height: 500px;
+	width: 200px;
+	float: left;
+	padding: 5px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav > ul > li {
+  margin: 5px;
+  padding: 5px 0px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > li > a:hover {
+  color: aquamarine;
+  font-weight: bold;
+}
+
+section.main {
+  width: 350px;
+	float: left;
+	margin: 10px;
+}
+
+footer {
+  background-color: aliceblue;
+  clear: both;
+  padding: 5px;
+}
+
+#header-text {
+  text-align: center;
+}
+
+#footer-text {
+  text-align: center;
+}
