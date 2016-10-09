@@ -2,34 +2,69 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Insert Title Here</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1 id="header-text">Insert Header Here</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1 id="header-text">Insert Header Here</h1>
+      </header>
+
+      <nav>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#projects">Projects</a></li>
+          <li><a data-toggle="tab" href="#resume">View My Re&#769;sume</a></li>
+          <li><a data-toggle="tab" href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+
+      <section class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <p>
+            Home
+          </p>
+        </div>
+        <div id="projects" class="tab-pane fade">
+          <p>
+            Projects
+          </p>
+        </div>
+        <div id="resume" class="tab-pane fade">
+          <p>
+            Resume
+          </p>
+        </div>
+        <div id="contact" class="tab-pane fade">
+          <p>
+            Contact
+          </p>
+          <form method="get" action="#">
+            <label for="name">Name:</label>
+            <input type="text" name="name" style="margin-right: 100px;">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <br><br>
+            <textarea rows="10" cols="80"></textarea>
+            <br><br>
+            <button type="submit" name="submit_btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <p id="footer-text">
+          &copy; 2016
+        </p>
+      </footer>
+    </div>
     
-    <nav>
-      <ul>
-        <li><a class="selected" href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">View My Re&#769;sume</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-      </ul>
-    </nav>
-
-    <section id="main">
-      <p>
-        Sample Text
-      </p>
-    </section>
-
-    <footer>
-      <p id="footer-text">
-        &copy; 2016
-      </p>
-    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

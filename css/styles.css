@@ -9,16 +9,11 @@ header {
 
 nav {
   background-color: azure;
-  width: 15%;
-  height: 500px;
-	width: 200px;
-	float: left;
 	padding: 5px;
 }
 
 nav > ul {
   list-style-type: none;
-  display: inline-block;
 }
 
 nav > ul > li {
@@ -36,15 +31,12 @@ nav > ul > li > a:hover {
   font-weight: bold;
 }
 
-section.main {
-  position: relative;
-	float: left;
-  margin-top: 200px;
+.tab-pane {
+  height: 450px;
 }
 
 footer {
   background-color: aliceblue;
-  clear: both;
   padding: 5px;
 }
 
