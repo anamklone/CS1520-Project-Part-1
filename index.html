@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Insert Title Here</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Insert Title Here</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -33,6 +33,10 @@
           <p>
             Projects
           </p>
+          <ul class="pager">
+            <li class="previous"><a href="#">Previous</a></li>
+            <li class="next"><a href="#">Next</a></li>
+          </ul>
         </div>
         <div id="resume" class="tab-pane fade">
           <p>
@@ -40,19 +44,17 @@
           </p>
         </div>
         <div id="contact" class="tab-pane fade">
-          <p>
-            Contact
-          </p>
-          <form method="get" action="#">
-            <label for="name">Name:</label>
-            <input type="text" name="name" style="margin-right: 100px;">
-
-            <label for="email">Email:</label>
-            <input type="email" name="email">
+          <form action="/" method="get" id="contactForm">
+            <label for="name">Name:
+              <input type="text" name="name" style="margin-right: 100px;">
+            </label>
+            <label for="email">Email:
+              <input type="email" name="email">
+            </label>
             <br><br>
             <textarea rows="10" cols="80"></textarea>
             <br><br>
-            <button type="submit" name="submit_btn">Send Message</button>
+            <input type="submit" value="Send Message">
           </form>
         </div>
       </section>
@@ -63,8 +65,8 @@
         </p>
       </footer>
     </div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
