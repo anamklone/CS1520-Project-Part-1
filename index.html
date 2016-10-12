@@ -9,62 +9,91 @@
     <link href="./css/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1 id="header-text">Insert Header Here</h1>
-      </header>
-
+    <header>
+      <h2 id="header-text">Anastasia M. Klonowski</h2>
       <nav>
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-          <li><a data-toggle="tab" href="#projects">Projects</a></li>
-          <li><a data-toggle="tab" href="#resume">View My Re&#769;sume</a></li>
-          <li><a data-toggle="tab" href="#contact">Contact Me</a></li>
-        </ul>
+        <a data-toggle="tab" href="#home">Home</a>
+        <a data-toggle="tab" href="#projects">Projects</a>
+        <a data-toggle="tab" href="#resume">View My Re&#769;sume</a>
+        <a data-toggle="tab" href="#contact">Contact Me</a>
       </nav>
+    </header>
 
-      <section class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-          <p>
-            Home
-          </p>
-        </div>
-        <div id="projects" class="tab-pane fade">
-          <p>
-            Projects
-          </p>
-          <ul class="pager">
-            <li class="previous"><a href="#">Previous</a></li>
-            <li class="next"><a href="#">Next</a></li>
-          </ul>
-        </div>
-        <div id="resume" class="tab-pane fade">
-          <p>
-            Resume
-          </p>
-        </div>
-        <div id="contact" class="tab-pane fade">
-          <form action="/" method="get" id="contactForm">
-            <label for="name">Name:
-              <input type="text" name="name" style="margin-right: 100px;">
-            </label>
-            <label for="email">Email:
-              <input type="email" name="email">
-            </label>
-            <br><br>
-            <textarea rows="10" cols="80"></textarea>
-            <br><br>
-            <input type="submit" value="Send Message">
-          </form>
-        </div>
-      </section>
-
-      <footer>
-        <p id="footer-text">
-          &copy; 2016
+    <section class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <aside id="personalInfo" class="well">
+          <img src="./img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="175px" width="150px">
+        </aside>
+        <article id="posts" class="panel panel-default">
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">Title</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">Title</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">Title</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <footer>
+            <ul id="postList" class="pagination">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            </ul>
+          </footer>
+        </article>
+        <div class="clear-float"></div>
+      </div>
+      
+      <div id="projects" class="tab-pane fade">
+        <p>
+          Projects
         </p>
-      </footer>
-    </div>
+        <ul class="pager">
+          <li class="previous"><a href="#">Previous</a></li>
+          <li class="next"><a href="#">Next</a></li>
+        </ul>
+      </div>
+      
+      <div id="resume" class="tab-pane fade">
+        <p>
+          Resume
+        </p>
+      </div>
+      
+      <div id="contact" class="tab-pane fade">
+        <form action="/" method="get" id="contactForm">
+          <label for="name">Name:
+            <input type="text" name="name" style="margin-right: 100px;">
+          </label>
+          <label for="email">Email:
+            <input type="email" name="email">
+          </label>
+          <br><br>
+          <textarea rows="10" cols="80"></textarea>
+          <br><br>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+    </section>
+
+    <footer id="page-footer">
+      <p id="footer-text">
+        &copy; 2016; anamklone
+      </p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
