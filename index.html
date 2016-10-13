@@ -21,7 +21,7 @@
       </nav>
     </header>
 
-    <section class="tab-content">
+    <div class="tab-content">
       <div id="home" class="tab-pane fade in active">
         <!--
         <aside id="personalInfo" class="well">
@@ -59,15 +59,15 @@
         </article>
         <div class="clear-float"></div>
         -->
-        <div id="photo"></div>
-        <div id="bio"></div>
-        <div id="interests">
+        <section id="photo"></section>
+        <section id="bio"></section>
+        <section id="interests">
           <p>Sample Text</p>
-        </div>
-        <div id="quote">
+        </section>
+        <section id="quote">
           <p class="quote">“…because nerds like us are allowed to be unironically enthusiastic about stuff… Nerds are allowed to love stuff, like jump-up-and-down-in-the-chair-can’t-control-yourself love it. Hank, when people call people nerds, mostly what they’re saying is ‘you like stuff.’ Which is just not a good insult at all. Like, ‘you are too enthusiastic about the miracle of human consciousness’.”</p>
           <p class="byline">John Green</p>
-        </div>
+        </section>
       </div>
       
       <div id="projects" class="tab-pane fade">
@@ -81,20 +81,25 @@
       </div>
       
       <div id="contact" class="tab-pane fade">
-        <form action="/" method="get" id="contactForm">
-          <label for="name">Name:
-            <input type="text" name="name" style="margin-right: 100px;">
-          </label>
-          <label for="email">Email:
-            <input type="email" name="email">
-          </label>
-          <br><br>
-          <textarea rows="10" cols="80"></textarea>
-          <br><br>
-          <input type="submit" value="Send Message">
-        </form>
-      </div>     
-    </section>
+        <section id="form-header">
+        
+        </section>
+        <section id="contact-form">
+          <form action="mailto:amk226@pitt.edu" method="get" id="contactForm" class="form-horizontal">
+            <label for="name" class="control-label">Name:
+              <input type="text" class="form-control" name="name" style="margin-right: 100px;">
+            </label>
+            <label for="email" class="control-label">Email:
+              <input type="email" class="form-control" name="email">
+            </label>
+            <br><br>
+            <textarea class="form-control" name="message" rows="10" cols="80"></textarea>
+            <br><br>
+            <input type="submit" class="form-control" value="Send Message">
+          </form>
+        </section>
+      </div>
+    </div>
 
     <footer id="page-footer">
       <div id="footer-icons">

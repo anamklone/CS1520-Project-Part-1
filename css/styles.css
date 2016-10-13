@@ -6,6 +6,7 @@ header {
   background-color: #824e4e;
   color: whitesmoke;
   padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 #header-text {
@@ -47,7 +48,7 @@ nav > a:active {
 footer {
   text-align: center;
   vertical-align: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 #page-footer {
@@ -80,6 +81,11 @@ footer {
   margin: 0px 5px;
 }
 
+section {
+  display: block;
+  padding: 30px 30px;
+}
+
 #photo {
   
 }
@@ -89,9 +95,7 @@ footer {
 }
 
 #interests {
-  display: block;
   background-color: #c2ae95;
-  padding: 30px 30px;
   text-align: center;
   font-family: 'Concert One', cursive;
 }
@@ -101,22 +105,33 @@ footer {
 }
 
 #quote {
-  display: block;
   background-color: #66777d;
-  padding: 30px 30px;
   text-align: center;
   color: floralwhite;
   font-family: 'Special Elite', cursive;
 }
 
 .quote {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .byline {
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 
-#contact {
+#form-header {
+  background-color: #66777d;
+}
+
+#contact-form {
+  background-color: #c2ae95;
   text-align: center;
+}
+
+#contactForm {
+  width: 60%;
+}
+
+form > label {
+  font-weight: normal;
 }
