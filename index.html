@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/favicon.ico">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Concert+One|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Special+Elite" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
   </head>
@@ -23,44 +23,13 @@
 
     <div class="tab-content">
       <div id="home" class="tab-pane fade in active">
-        <!--
-        <aside id="personalInfo" class="well">
-          <img src="./img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="175px" width="150px">
-        </aside>
-        <article id="posts" class="panel panel-default">
-          <div class="media">
-            <div class="media-body">
-              <h4 class="media-heading">Title</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <hr>
-          <div class="media">
-            <div class="media-body">
-              <h4 class="media-heading">Title</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <hr>
-          <div class="media">
-            <div class="media-body">
-              <h4 class="media-heading">Title</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <footer>
-            <ul id="postList" class="pagination">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-            </ul>
-          </footer>
-        </article>
+        <section id="photo">
+          <img src="./img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="350px">
+        </section>
+        <section id="bio">
+          <p>TEXT HERE</p>
+        </section>
         <div class="clear-float"></div>
-        -->
-        <section id="photo"></section>
-        <section id="bio"></section>
         <section id="interests">
           <p>Sample Text</p>
         </section>
@@ -81,23 +50,24 @@
       </div>
       
       <div id="contact" class="tab-pane fade">
-        <section id="form-header">
-        
-        </section>
         <section id="contact-form">
-          <form action="mailto:amk226@pitt.edu" method="get" id="contactForm" class="form-horizontal">
-            <label for="name" class="control-label">Name:
-              <input type="text" class="form-control" name="name" style="margin-right: 100px;">
+          <form action="mailto:amk226@pitt.edu" method="post" enctype="text/plain" id="contactForm" class="form-inline">
+            <label for="name" class="to-left">Name:&nbsp;
+              <input type="text" class="form-control" name="name">
             </label>
-            <label for="email" class="control-label">Email:
+            <label for="email" class="to-right">Email:&nbsp;
               <input type="email" class="form-control" name="email">
             </label>
             <br><br>
-            <textarea class="form-control" name="message" rows="10" cols="80"></textarea>
+            <textarea class="form-control" name="message" rows="6" cols="80"></textarea>
             <br><br>
-            <input type="submit" class="form-control" value="Send Message">
+            <input id="submit-btn" type="submit" class="form-control" value="Send Message">
           </form>
         </section>
+        <section id="contact-info">
+          <p>Testing...</p>
+        </section>
+        <div class="clear-float"></div>
       </div>
     </div>
 

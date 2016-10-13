@@ -87,17 +87,26 @@ section {
 }
 
 #photo {
-  
+  float: right;
+  width: 50%;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.img-thumbnail {
+  height: 325px;
 }
 
 #bio {
-  
+  padding-left: 175px;
+  float: left;
+  width: 50%;
+  background-color: whitesmoke;
 }
 
 #interests {
   background-color: #c2ae95;
   text-align: center;
-  font-family: 'Concert One', cursive;
 }
 
 #interests > p {
@@ -119,19 +128,43 @@ section {
   font-size: 1.05em;
 }
 
-#form-header {
-  background-color: #66777d;
-}
-
 #contact-form {
   background-color: #c2ae95;
-  text-align: center;
+  float: left;
+  width: 60%;
+  padding-right: 75px;
 }
 
 #contactForm {
-  width: 60%;
+  text-align: center;
 }
 
 form > label {
+  font-size: 1.15em;
   font-weight: normal;
+}
+
+input.form-control {
+  width: 300px;
+}
+
+label.to-right {
+  position: relative;
+  left: 50px;
+}
+
+label.to-left {
+  position: relative;
+  left: -50px;
+}
+
+#contact-info {
+  background-color: #66777d;
+  color: whitesmoke;
+  float: right;
+  width: 40%;
+}
+
+div.clear-float {
+  clear: both;
 }
