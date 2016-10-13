@@ -24,10 +24,55 @@
     <div class="tab-content">
       <div id="home" class="tab-pane fade in active">
         <section id="photo">
-          <img src="./img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="350px">
+          <img src="../img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="350px">
         </section>
         <section id="bio">
-          <p>TEXT HERE</p>
+          <code>
+          <!--
+            struct Anastasia {&nbsp;
+              char name[19] = "Anastasia Klonowski";
+              int age = 20;
+              
+            }
+          -->
+            package universe.humans;
+            import universe.Knowledge.*;
+            
+            public class Anastasia {
+              public String name = "Anastasia Klonowski";
+              public int age = 20;
+              public String university = "University of Pittsburgh";
+              public String school = "Swanson School of Engineering";
+              public String major = "Computer Engineering";
+
+              public Anastasia() {
+                eat();
+                sleep();
+                read();
+                code();
+              }
+              
+              <details>
+                <summary>public Energy eat() {</summary>
+
+                }
+              </details>  
+
+              <details>
+                <summary>public Energy sleep() {</summary>
+                  int minHours = 4;
+                  int maxHours = ???;
+                }
+              </details>
+
+              <details>
+                <summary>public Knowledge read() {</summary>
+                  String myBooks[] = {"", "", "", "", ""};
+                  String favoriteAuthors[] = {"Jane Austen", "", "J.K. Rowling"};
+                }
+              </details>
+            }
+          </code>
         </section>
         <div class="clear-float"></div>
         <section id="interests">
@@ -74,8 +119,8 @@
     <footer id="page-footer">
       <div id="footer-icons">
         <a href="https://github.com/anamklone" target="_blank"><i class="fa fa-github-square"></i></a>
-        <a href="https://plus.google.com/u/0/115552143306583869301" target="_blank"><i class="fa fa-google-plus-square"></i></a>
         <a href="https://www.linkedin.com/in/anastasia-klonowski-729707107" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://devpost.com/amk226" target="_blank"><i class="fa fa-code"></i></a>
       </div>
       <p id="footer-text">
         &copy; 2016; aklonowski
