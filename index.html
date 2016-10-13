@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Insert Title Here</title>
+    <title>Anastasia M. Klonowski Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon.ico">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Concert+One|Special+Elite" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -14,13 +16,14 @@
       <nav>
         <a data-toggle="tab" href="#home">Home</a>
         <a data-toggle="tab" href="#projects">Projects</a>
-        <a data-toggle="tab" href="#resume">View My Re&#769;sume</a>
+        <a href="./aklonowski_resume.pdf" target="_blank">View My Re&#769;sume</a>
         <a data-toggle="tab" href="#contact">Contact Me</a>
       </nav>
     </header>
 
     <section class="tab-content">
       <div id="home" class="tab-pane fade in active">
+        <!--
         <aside id="personalInfo" class="well">
           <img src="./img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="175px" width="150px">
         </aside>
@@ -55,6 +58,16 @@
           </footer>
         </article>
         <div class="clear-float"></div>
+        -->
+        <div id="photo"></div>
+        <div id="bio"></div>
+        <div id="interests">
+          <p>Sample Text</p>
+        </div>
+        <div id="quote">
+          <p class="quote">“…because nerds like us are allowed to be unironically enthusiastic about stuff… Nerds are allowed to love stuff, like jump-up-and-down-in-the-chair-can’t-control-yourself love it. Hank, when people call people nerds, mostly what they’re saying is ‘you like stuff.’ Which is just not a good insult at all. Like, ‘you are too enthusiastic about the miracle of human consciousness’.”</p>
+          <p class="byline">John Green</p>
+        </div>
       </div>
       
       <div id="projects" class="tab-pane fade">
@@ -65,12 +78,6 @@
           <li class="previous"><a href="#">Previous</a></li>
           <li class="next"><a href="#">Next</a></li>
         </ul>
-      </div>
-      
-      <div id="resume" class="tab-pane fade">
-        <p>
-          Resume
-        </p>
       </div>
       
       <div id="contact" class="tab-pane fade">
@@ -86,12 +93,17 @@
           <br><br>
           <input type="submit" value="Send Message">
         </form>
-      </div>
+      </div>     
     </section>
 
     <footer id="page-footer">
+      <div id="footer-icons">
+        <a href="https://github.com/anamklone" target="_blank"><i class="fa fa-github-square"></i></a>
+        <a href="https://plus.google.com/u/0/115552143306583869301" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+        <a href="https://www.linkedin.com/in/anastasia-klonowski-729707107" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+      </div>
       <p id="footer-text">
-        &copy; 2016; anamklone
+        &copy; 2016; aklonowski
       </p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
