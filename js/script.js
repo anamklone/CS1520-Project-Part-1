@@ -13,6 +13,9 @@ for (i = 0; i < methods.length; i++) {
 }
 
 (function($) {  
+  $('#contact-form').height($(window).height());
+  $('#contact-info').height($(window).height());
+  
   $('#contactForm').on('submit', function(e) {
     e.preventDefault();
     var valid = true;
