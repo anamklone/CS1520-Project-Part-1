@@ -116,8 +116,10 @@ section {
 #photo {
   text-align: center;
   float: left;
-  width: 40%;
+  width: 35%;
+  height: 400px;
   background-color: #c2ae95;
+  padding-right: 0px;
 }
 
 .img-thumbnail {
@@ -126,19 +128,25 @@ section {
 }
 
 #info {
-  padding-left: 75px;
+  text-align: center;
   float: right;
-  width: 60%;
+  width: 65%;
+  height: 400px;
   background-color: #c2ae95;
+  padding-left: 0px;
 }
 
-#interests {
-  background-color: #c2ae95;
+#buzzwords {
+  font-size: 2.25em;
+}
+
+#images {
   text-align: center;
 }
 
-#interests > p {
-  font-size: 1.25em;
+#images > img {
+  height: 65px;
+  margin: 5px;
 }
 
 #quote {

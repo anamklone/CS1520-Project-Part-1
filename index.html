@@ -23,16 +23,27 @@
 
     <div class="tab-content">
       <div id="home" class="tab-pane fade in active">
-        <section id="photo">
-          <img src="./img/professional_pic.JPG" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" title="A SAD LITTLE PERSON" height="350px">
-        </section>
-        <section id="info">
-          <p id="buzzwords">anastasia / </p>
-        </section>
-        <div class="clear-float"></div>
-        <section id="interests">
-          <p>Sample Text</p>
-        </section>
+        <div class="container">
+          <section id="photo">
+            <img src="./img/professional_pic.jpg" class="img-thumbnail img-responsive" alt="Anastasia Klonowski" height="350px">
+          </section>
+          <section id="info">
+            <br>
+            <p id="buzzwords">programmer | developer | engineer</p>
+            <br>
+            <div id="images">
+              <img src="./img/script_pitt.png" alt="University of Pittsburgh">
+              <img src="./img/compunetix_logo.png" alt="compunetix inc.">
+              <img src="./img/pitt_swe.png" alt="Pitt Society of Women Engineers">
+              <img src="./img/pitt_wics.jpg" alt="Pitt Women in Computer Science Club">
+              <img src="./img/she_innovates.png" alt="SheInnovates">
+              <img src="./img/steel_hacks.png" alt="SteelHacks">
+              <img src="./img/randall_big_idea.png" alt="Randall Family Big Idea Competition">
+              <img src="./img/strength10her_logo.png" alt="strength10her">
+            </div>
+          </section>
+          <div class="clear-float"></div>
+        </div>
         <section id="quote">
           <p class="quote">“…because nerds like us are allowed to be unironically enthusiastic about stuff… Nerds are allowed to love stuff, like jump-up-and-down-in-the-chair-can’t-control-yourself love it. Hank, when people call people nerds, mostly what they’re saying is ‘you like stuff.’ Which is just not a good insult at all. Like, ‘you are too enthusiastic about the miracle of human consciousness’.”</p>
           <p class="byline">John Green</p>
@@ -55,32 +66,40 @@
             public String major = "Computer Engineering";
 
             public Anastasia() {
-              eat();
+              eat("breakfast");
               sleep(9);
               read();
               code();
             }
 
-            <span class="collapsible"><button class="symbol">&plus;</button>public Energy eat() {
-            <span class="method-body">  String meal;
+            <span class="collapsible"><button class="symbol">&plus;</button>public Energy eat(String meal) {
+            <span class="method-body">  if (meal.equals("breakfast")) {
+                String food = {"waffles", "pancakes", "bagel", "cereal"};
+              }
+              return true;
             }</span></span>
-
+            
             <span class="collapsible"><button class="symbol">&plus;</button>public Energy sleep(int hours) {
             <span class="method-body">  int average = 8;
               if (hours &lt; average) {
-                return LOW;                
+                return false;                
               } else if (hours &gt;&equals; average) {
-                return HIGH;
+                return true;
               }
             }</span></span>
-
+            
             <span class="collapsible"><button class="symbol">&plus;</button>public Knowledge read() {
-            <span class="method-body">  String myBooks[] = {"Pride and Prejudice", "", "", "", ""};
+            <span class="method-body">  String myBooks[] = {"Pride and Prejudice", "Fangirl", "The Hobbit", "The Once and Future King", "Nimona"};
               String favoriteAuthors[] = {"Jane Austen", "J.R.R. Tolkien", "J.K. Rowling", "Neil Gaiman"};
+              if (!haveFreeTime) {
+                myBooks = textbooks;
+              }
+              return true;
             }</span></span>
-
+            
             <span class="collapsible"><button class="symbol">&plus;</button>public Happiness code() {
-            <span class="method-body">  
+            <span class="method-body">  String languages = {"Java", "C", "C#", "HTML", "CSS", "JavaScript"};
+              return <i class="fa fa-smile-o"></i>;
             }</span></span>
           }
           </code>
@@ -88,7 +107,7 @@
       </div>
       
       <div id="contact" class="tab-pane fade">
-        <div class="container">
+        <div id="contact-container" class="container">
           <section id="contact-form">
             <h2>Send a Message</h2>
             <form action="mailto:amk226@pitt.edu" method="post" enctype="text/plain" id="contactForm" class="form-inline">
@@ -106,7 +125,10 @@
           </section>
           <section id="contact-info">
             <ul>
-              <li><a href="mailto:amk226@pitt.edu"><i class="fa fa-envelope"></i>&nbsp;Send Me An Email</a></li>
+              <li><a href="mailto:amk226@pitt.edu"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Email</a></li>
+              <li><a href="https://www.linkedin.com/in/anastasia-klonowski-729707107"target="_blank"><i class="fa fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a></li>
+              <li><a href="https://www.slack.com" target="_blank"><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</a></li>
+              <li><a href="https://www.reddit.com/user/anamklone/" target="_blank"><i class="fa fa-reddit-alien"></i>&nbsp;&nbsp;Reddit</a></li>
             </ul>
           </section>
           <div class="clear-float"></div>
