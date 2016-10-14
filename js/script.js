@@ -1,4 +1,18 @@
-(function($) {
+var methods = document.getElementsByClassName('symbol');
+var i;
+
+for (i = 0; i < methods.length; i++) {
+  methods[i].onclick = function()  {
+    if (this.innerHTML == '+') {
+      this.innerHTML = '&minus;';
+    } else if (this.innerHTML == '−') {
+      this.innerHTML = '&plus;';
+    }
+    this.nextElementSibling.classList.toggle('expand');
+  }
+}
+
+(function($) {  
   $('#contactForm').on('submit', function(e) {
     e.preventDefault();
     var valid = true;
